@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+.digital-clock-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.digital-clock-main-container .digital-clock-body {
+  background-color: rgb(11, 38, 76);
+  padding: 5px 15px;
+  font-size: 15px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: aliceblue;
+}
+
+.digital-clock-main-container .digital-clock-body .top-section,
+.digital-clock-main-container .digital-clock-body .bottom-section {
+  display: flex;
+}
+
+.digital-clock-main-container .digital-clock-body .mirgin-right {
+  margin-right: 10px;
+}
+
+.digital-clock-main-container .digital-clock-body .bottom-section {
+  gap: 10px;
+}
