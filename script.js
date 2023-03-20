@@ -9,7 +9,7 @@ const format = document.getElementById("format");
 
 const updateDate = () => {
   const date = new Date();
-  const dayList = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const dayList = ["Sunday", "Monday", "Tueday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const monthList = [
     "January",
     "February",
@@ -32,7 +32,7 @@ const updateDate = () => {
   weekDay.innerText = dayList[date.getDay()];
   // set time
   hours.innerText =
-    date.getHours() > 12 ? `0${date.getHours() - 12}` : date.getHours();
+    date.getHours() > 12 ? (date.getHours() - 12) >= 10 ? date.getHours() - 12 : `0${date.getHours() - 12}`  : date.getHours();
   minutes.innerText =
     date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes();
   seconds.innerText =
